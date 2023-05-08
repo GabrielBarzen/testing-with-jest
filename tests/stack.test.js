@@ -9,7 +9,7 @@ test('push 100 items on empty stack', () => {
     for(let i = 1; i<=100; i++) {
         stack.push(i);
     }
-    for(let i = 100; i>=0; i--) {
+    for(let i = 100; i>0; i--) {
         let item = stack.pop();
         expect(item).toBe(i);
     }

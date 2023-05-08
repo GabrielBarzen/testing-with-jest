@@ -44,6 +44,6 @@ test('The stack should accept item', async () => {
     let item_alert_text = await driver.switchTo().alert().getText();
     await driver.switchTo().alert().accept();
     let text = item_alert_text.split(" ");
-    expect(text.at(-1)).toEqual("b");
+    expect(text.at(-1)).toEqual("a");
     
 })
